@@ -35,6 +35,9 @@
     background:-moz-linear-gradient(left,#97dde1, #f7dbe7, #ff8a6e);/*Mozilla*/
     background:-webkit-linear-gradient(left,#97dde1, #f7dbe7, #ff8a6e);/*new gradient for Webkit*/
     background:-o-linear-gradient(left,#97dde1, #f7dbe7, #ff8a6e); /*Opera11*/
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
 }
 .top .nav {
     display: flex;
@@ -79,7 +82,7 @@
 /* MAIN */
 .main {
     width: 830px;
-    margin: 120px auto 0;
+    margin: 80px auto 0;
 }
 
 /* CREATIONS */

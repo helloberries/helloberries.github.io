@@ -1,0 +1,53 @@
+@import "reset";
+@import "base";
+
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $nav-li-height * 1.5;
+  @include linear-gradient(left, #97dde1, #f7dbe7, #ff8a6e);
+  @include box-shadow(0 1px 3px rgba(0,0,0,.3));
+
+  & .nav {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    
+    & li {
+      display: inline-block;
+      height: $nav-li-height;
+      line-height:$nav-li-height;
+      margin-top: $nav-li-height * (1.5 - 1) / 2;
+      -webkit-flex-basis: $nav-li-width;
+      flex-basis: $nav-li-width;
+      text-align: center;
+      font-family: $font-family;
+      font-size: 15px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      border: 2px solid #fff;
+
+      & a:link, & a:visited {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        @include transition(color,box-shadow .65s ease-in);
+      }
+      & a:hover, & a:focus {
+        color: #a8a8a8;
+        @include box-shadow(inset 150px 0 rgba(255,255,255,.5));
+      }
+    }
+  }
+}

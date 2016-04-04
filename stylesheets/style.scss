@@ -183,28 +183,32 @@
       position: relative;
       font-weight: lighter;
 
-      & li {
-        position: relative;
-        width: $contact-li-width;
-        height: $font-size * 2;
-        margin-bottom: $font-size * 1.5;
-        font-size: $font-size;
-        text-transform: uppercase;
+      & .address {
+        float: left;
+        width: 40%;
 
-        & a span {
-          margin-left: $font-size;
-        }
-        & a:link, & a:visited {
-          color: $text-color;
-        }
-        & a:hover {
-          color: #000;
+        & li {
+          position: relative;
+          width: $contact-li-width;
+          height: $font-size * 2;
+          margin-bottom: $font-size * 1.5;
+          font-size: $font-size;
+          text-transform: uppercase;
+
+          & a span {
+            margin-left: $font-size;
+          }
+          & a:link, & a:visited {
+            color: $text-color;
+          }
+          & a:hover {
+            color: #000;
+          }
         }
       }
+
       & .introduce {
-        position: absolute;
-        top: -20%;
-        right: 0;
+        float: right;
         width: 60%;
         height: auto;
         padding: $font-size * 1.5;

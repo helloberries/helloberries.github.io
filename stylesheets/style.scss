@@ -57,6 +57,7 @@
     width: 70%;
     height: auto;
     margin: 0 auto;
+    margin-top: $nav-li-height * 1.5;
     
     /* home */
     &.home {
@@ -75,43 +76,60 @@
     /* demos */
     &.demos {
       @extend .flex-container;
+      clear: both;
 
       & .demo {
-        -webkit-flex-basis: 250px;
-        flex-basis: 250px;
-        height: 200px;
-        margin-bottom: $font-size;
-        border: 1px solid #a8a8a8;
-        background-color: #fefefe;
-        @include box-shadow(0 1px 2px rgba(0,0,0,.15));
-        @include transition(transform .2s ease-out);
+        -webkit-flex-basis: $demo-width;
+        flex-basis: $demo-width;
+        color: $text-color;
 
-        &:hover{
-          @include transform(translate(5px, 5px));
-        }
+        & .demoblock {
+          float: left;
+          width: $demo-width / 2;
+          height: 150px;
+          margin-bottom: $font-size;
+          border: 1px solid #a8a8a8;
+          background-color: #fefefe;
+          @include box-shadow(0 1px 2px rgba(0,0,0,.15));
+          @include transition(transform .2s ease-out);
 
-        & .preview {
-          width: 80%;
-          height: 75%;
-          margin: auto;
-          margin-top: 4%;
-          background-color: #eee;
+          &:hover{
+            @include transform(translate(5px, 5px));
+          }
+
+          & .preview {
+            width: 80%;
+            height: 75%;
+            margin: auto;
+            margin-top: 4%;
+            background-color: #eee;
+          }
+          & .pre-links {
+            float: right;
+            margin-right: $font-size * 1.2;
+            font-size: $font-size * .5;
+
+            & a {
+              margin-left: $font-size * .5;
+              padding-top: $font-size * .3;
+              padding-bottom: $font-size * .2;
+            }
+            & a:link, & a:visited {
+              color: $text-color;
+            }
+            & a:hover {
+              color: #000;
+            }
+          }
         }
-        & .pre-links {
+        & .demoinfo {
           float: right;
-          margin-right: $font-size * 1.2;
-          font-size: $font-size * .5;
+          width: $demo-width / 2;
+          padding-left: $font-size;
 
-          & a {
-            margin-left: $font-size * .5;
-            padding-top: $font-size * .5;
-            padding-bottom: $font-size * .2;
-          }
-          & a:link, & a:visited {
-            color: $text-color;
-          }
-          & a:hover {
-            border-bottom: 1px solid #a8a8a8;
+          & p {
+            margin-top: $font-size;
+            line-height: $font-size * 1.2;
           }
         }
       }

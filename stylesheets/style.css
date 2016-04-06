@@ -40,10 +40,11 @@ body {
 .main {
   font-family: "Consolas", monospace; }
 
+/* ICOMOON */
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?2qwyg8");
-  src: url("fonts/icomoon.eot?2qwyg8#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?2qwyg8") format("truetype"), url("fonts/icomoon.woff?2qwyg8") format("woff"), url("fonts/icomoon.svg?2qwyg8#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?lbg3ik");
+  src: url("fonts/icomoon.eot?lbg3ik#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?lbg3ik") format("truetype"), url("fonts/icomoon.woff?lbg3ik") format("woff"), url("fonts/icomoon.svg?lbg3ik#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -67,6 +68,9 @@ body {
 
 .icon-compass:before {
   content: "\e905"; }
+
+.icon-link:before {
+  content: "\e904"; }
 
 .icon-email:before {
   content: "\e900"; }
@@ -147,6 +151,7 @@ body {
     width: 70%;
     height: auto;
     margin: 0 auto;
+    margin-top: 60px;
     /* home */
     /* demos */
     /* skills */
@@ -159,43 +164,56 @@ body {
         font-size: 40px; }
       .section section.home h2 {
         font-size: 24px; }
-    .section section.demos .demo {
-      -webkit-flex-basis: 250px;
-      flex-basis: 250px;
-      height: 200px;
-      margin-bottom: 20px;
-      border: 1px solid #a8a8a8;
-      background-color: #fefefe;
-      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-      -webkit-transition: transform 0.2s ease-out;
-      -moz-transition: transform 0.2s ease-out;
-      -o-transition: transform 0.2s ease-out;
-      transition: transform 0.2s ease-out; }
-      .section section.demos .demo:hover {
-        -webkit-transform: translate(5px, 5px);
-        -moz-transform: translate(5px, 5px);
-        -o-transform: translate(5px, 5px);
-        transform: translate(5px, 5px); }
-      .section section.demos .demo .preview {
-        width: 80%;
-        height: 75%;
-        margin: auto;
-        margin-top: 4%;
-        background-color: #eee; }
-      .section section.demos .demo .pre-links {
-        float: right;
-        margin-right: 24px;
-        font-size: 10px; }
-        .section section.demos .demo .pre-links a {
-          margin-left: 10px;
-          padding-top: 10px;
-          padding-bottom: 4px; }
-        .section section.demos .demo .pre-links a:link, .section section.demos .demo .pre-links a:visited {
-          color: #666; }
-        .section section.demos .demo .pre-links a:hover {
-          border-bottom: 1px solid #a8a8a8; }
+    .section section.demos {
+      clear: both; }
+      .section section.demos .demo {
+        -webkit-flex-basis: 400px;
+        flex-basis: 400px;
+        color: #666; }
+        .section section.demos .demo .demoblock {
+          float: left;
+          width: 200px;
+          height: 150px;
+          margin-bottom: 20px;
+          border: 1px solid #a8a8a8;
+          background-color: #fefefe;
+          -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+          -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+          -webkit-transition: transform 0.2s ease-out;
+          -moz-transition: transform 0.2s ease-out;
+          -o-transition: transform 0.2s ease-out;
+          transition: transform 0.2s ease-out; }
+          .section section.demos .demo .demoblock:hover {
+            -webkit-transform: translate(5px, 5px);
+            -moz-transform: translate(5px, 5px);
+            -o-transform: translate(5px, 5px);
+            transform: translate(5px, 5px); }
+          .section section.demos .demo .demoblock .preview {
+            width: 80%;
+            height: 75%;
+            margin: auto;
+            margin-top: 4%;
+            background-color: #eee; }
+          .section section.demos .demo .demoblock .pre-links {
+            float: right;
+            margin-right: 24px;
+            font-size: 10px; }
+            .section section.demos .demo .demoblock .pre-links a {
+              margin-left: 10px;
+              padding-top: 6px;
+              padding-bottom: 4px; }
+            .section section.demos .demo .demoblock .pre-links a:link, .section section.demos .demo .demoblock .pre-links a:visited {
+              color: #666; }
+            .section section.demos .demo .demoblock .pre-links a:hover {
+              color: #000; }
+        .section section.demos .demo .demoinfo {
+          float: right;
+          width: 200px;
+          padding-left: 20px; }
+          .section section.demos .demo .demoinfo p {
+            margin-top: 20px;
+            line-height: 24px; }
     .section section.skills .skill {
       -webkit-flex-basis: 13em;
       flex-basis: 13em;
@@ -247,23 +265,24 @@ body {
     .section section.contact {
       position: relative;
       font-weight: lighter; }
-      .section section.contact li {
-        position: relative;
-        width: auto;
-        height: 40px;
-        margin-bottom: 30px;
-        font-size: 20px;
-        text-transform: uppercase; }
-        .section section.contact li a span {
-          margin-left: 20px; }
-        .section section.contact li a:link, .section section.contact li a:visited {
-          color: #666; }
-        .section section.contact li a:hover {
-          color: #000; }
+      .section section.contact .address {
+        float: left;
+        width: 40%; }
+        .section section.contact .address li {
+          position: relative;
+          width: auto;
+          height: 40px;
+          margin-bottom: 30px;
+          font-size: 20px;
+          text-transform: uppercase; }
+          .section section.contact .address li a span {
+            margin-left: 20px; }
+          .section section.contact .address li a:link, .section section.contact .address li a:visited {
+            color: #666; }
+          .section section.contact .address li a:hover {
+            color: #000; }
       .section section.contact .introduce {
-        position: absolute;
-        top: -20%;
-        right: 0;
+        float: right;
         width: 60%;
         height: auto;
         padding: 30px;

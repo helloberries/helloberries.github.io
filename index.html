@@ -26,20 +26,25 @@
         <section class="demos">
             <div class="demo">
                 <div class="demoblock">
-                    <div class="preview"></div>
+                    <div class="preview">
+                        <img src="stylesheets/images/demo1.png" alt="表单工厂">
+                    </div>
                     <div class="pre-links">
-                        <a href="#"><i class="icon-link"></i>在线演示</a>
-                        <a href="#"><i class="icon-link"></i>代码</a>
+                        <a rel="external" href="http://helloberries.github.io/ife2016/task0002/32/index.html"><i class="icon-link"></i>在线演示</a>
+                        <a rel="external" href="https://github.com/helloberries/ife2016/tree/master/task0002/32"><i class="icon-link" rel="external"></i>代码</a>
                     </div>
                 </div>
                 <div class="demoinfo">
-                    <h3>作品标题</h3>
-                    <p>1. 作品描述描述描述<br>2. 作品描述描述描述作品描述描述描述</p>
+                    <h3>表单工厂</h3>
+                    <i class="icon-circle-right"></i><span>纯JS生成表单</span>
+                    <i class="icon-circle-right"></i><span>切换皮肤</span>
+                    <i class="icon-circle-right"></i><span>提交前显示所有验证信息</span>
                 </div>
             </div>
             <div class="demo">
                 <div class="demoblock">
-                    <div class="preview"></div>
+                    <div class="preview">
+                    </div>
                     <div class="pre-links">
                         <a href="#"><i class="icon-link"></i>在线演示</a>
                         <a href="#"><i class="icon-link"></i>代码</a>
@@ -117,7 +122,7 @@
                 <li><a href="https://github.com/helloberries"><i class="icon-github"></i><span>github:&nbsp;</span>@helloberries</a></li>
                 <li><a href="javascript:;"><i class="icon-email"></i><span>email:&nbsp;</span>1245627473@qq.com</a></li>
                 <li><a href="javascript:;"><i class="icon-qq"></i><span>qq:&nbsp;</span>1245627473</a></li>
-                <li><a href="javascript:;"><i class="icon-qq"></i><span>qq:&nbsp;</span>1245627473</a></li>
+                <li><a href="javascript:;"><i class="icon-wechat"></i><span>wechat:&nbsp;</span>dolphin2567</a></li>
 
             </ul>
             <p class="introduce">多年以后，奥雷连诺上校站在行刑队面前，准会想起父亲带他去参观冰块的那个遥远的下午。当时，马孔多是个二十户人家的村庄，一座座土房都盖在河岸上，河水清澈，沿着遍布石头的河床流去，河里的石头光滑、洁白，活象史前的巨蛋。这块天地还是新开辟的，许多东西都叫不出名字，不得不用手指指点点。每年三月，衣衫褴楼的吉卜赛人都要在村边搭起帐篷，在笛鼓的喧嚣声中，向马孔多的居民介绍科学家的最新发明。他们首先带来的是磁铁。一个身躯高大的吉卜赛人，自称梅尔加德斯，满脸络腮胡子，手指瘦得象鸟的爪子，向观众出色地表演了他所谓的马其顿炼金术士创造的世界第八奇迹。</p>
@@ -137,6 +142,8 @@
            menu: '#fullpageMenu',
            scrollOverflow: true
        });
+        // 在新窗口打开链接
+        $('a[rel="external"]').attr('target', '_blank');
     });
 </script>
 </body>

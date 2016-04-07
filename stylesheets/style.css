@@ -43,8 +43,8 @@ body {
 /* ICOMOON */
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?lbg3ik");
-  src: url("fonts/icomoon.eot?lbg3ik#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?lbg3ik") format("truetype"), url("fonts/icomoon.woff?lbg3ik") format("woff"), url("fonts/icomoon.svg?lbg3ik#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?712t68");
+  src: url("fonts/icomoon.eot?712t68#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?712t68") format("truetype"), url("fonts/icomoon.woff?712t68") format("woff"), url("fonts/icomoon.svg?712t68#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -63,6 +63,9 @@ body {
 .icon-qq:before {
   content: "\e902"; }
 
+.icon-wechat:before {
+  content: "\e906"; }
+
 .icon-location:before {
   content: "\e903"; }
 
@@ -71,6 +74,9 @@ body {
 
 .icon-link:before {
   content: "\e904"; }
+
+.icon-circle-right:before {
+  content: "\e907"; }
 
 .icon-email:before {
   content: "\e900"; }
@@ -167,8 +173,6 @@ body {
     .section section.demos {
       clear: both; }
       .section section.demos .demo {
-        -webkit-flex-basis: 400px;
-        flex-basis: 400px;
         color: #666; }
         .section section.demos .demo .demoblock {
           float: left;
@@ -195,6 +199,9 @@ body {
             margin: auto;
             margin-top: 4%;
             background-color: #eee; }
+            .section section.demos .demo .demoblock .preview img {
+              width: 100%;
+              height: 100%; }
           .section section.demos .demo .demoblock .pre-links {
             float: right;
             margin-right: 24px;
@@ -211,9 +218,14 @@ body {
           float: right;
           width: 200px;
           padding-left: 20px; }
-          .section section.demos .demo .demoinfo p {
-            margin-top: 20px;
-            line-height: 24px; }
+          .section section.demos .demo .demoinfo h3 {
+            padding-bottom: 20px; }
+          .section section.demos .demo .demoinfo i {
+            margin-right: 5px; }
+          .section section.demos .demo .demoinfo span {
+            float: right;
+            width: 85%;
+            line-height: 20px; }
     .section section.skills .skill {
       -webkit-flex-basis: 13em;
       flex-basis: 13em;

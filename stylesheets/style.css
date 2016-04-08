@@ -143,9 +143,6 @@ body {
         box-shadow: inset 15em 0 rgba(255, 255, 255, 0.5); }
 
 @media screen and (max-width: 768px) {
-  /*------------------------------------*\
-    #HEADER
-  \*------------------------------------*/
   .header {
     background-image: -webkit-linear-gradient(left, #97dde1, #f7dbe7);
     background-image: -moz-linear-gradient(left, #97dde1, #f7dbe7);
@@ -345,6 +342,15 @@ body {
           -moz-transform: translate(5px, 5px);
           -o-transform: translate(5px, 5px);
           transform: translate(5px, 5px); }
+    @media screen and (max-width: 440px) {
+      .section section.contact .address {
+        margin-top: 3em; }
+        .section section.contact .address li {
+          margin: 0; }
+        .section section.contact .address span {
+          display: none; }
+      .section section.contact .introduce {
+        padding: .5em; } }
 
 /* 右侧导航 */
 #fp-nav ul li a span {

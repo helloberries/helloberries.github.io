@@ -48,9 +48,6 @@
     }
   }
 @media screen and (max-width: 768px) {
-  /*------------------------------------*\
-    #HEADER
-  \*------------------------------------*/
   .header {
     @include linear-gradient(left, #97dde1, #f7dbe7);
     @include box-shadow(none);
@@ -290,6 +287,22 @@
 
         &:hover {
           @include transform(translate(5px, 5px));
+        }
+      }
+    }
+    @media screen and (max-width: 440px) {
+      &.contact {
+        & .address {
+          margin-top: 3em;
+          & li {
+            margin: 0;
+          }
+          & span {
+            display: none;
+          }
+        }
+        & .introduce {
+          padding: .5em;
         }
       }
     }

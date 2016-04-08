@@ -53,7 +53,7 @@
     @include box-shadow(none);
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 768px) {
   .header {
     & .nav {
       display: block;
@@ -235,7 +235,7 @@
             @include transform(translate(5px, 5px));
           }
         }
-      @media screen and (max-width: 440px) {
+      @media screen and (max-width: 768px) {
         display: block;
         width: 100%;
         height: 100%;
@@ -323,7 +323,7 @@
         }
       }
     }
-    @media screen and (max-width: 440px) {
+    @media screen and (max-width: 768px) {
       &.contact {
         & .address {
           margin-top: 3em;

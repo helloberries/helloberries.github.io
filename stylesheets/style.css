@@ -151,7 +151,7 @@ body {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none; } }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 768px) {
   .header .nav {
     display: block;
     width: 100%; }
@@ -297,7 +297,7 @@ body {
         -moz-transform: translate(5px, 5px);
         -o-transform: translate(5px, 5px);
         transform: translate(5px, 5px); }
-    @media screen and (max-width: 440px) {
+    @media screen and (max-width: 768px) {
       .section section.skills {
         display: block;
         width: 100%;
@@ -378,7 +378,7 @@ body {
           -moz-transform: translate(5px, 5px);
           -o-transform: translate(5px, 5px);
           transform: translate(5px, 5px); }
-    @media screen and (max-width: 440px) {
+    @media screen and (max-width: 768px) {
       .section section.contact .address {
         margin-top: 3em; }
         .section section.contact .address li {

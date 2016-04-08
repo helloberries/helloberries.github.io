@@ -4,6 +4,9 @@ window.onload = function () {
     if (viewportW <= 768) {
         skilltitles[2].textContent = 'JS';
         skilltitles[3].textContent = '工具';
+    } else {
+        skilltitles[2].textContent = 'JavaScript';
+        skilltitles[3].textContent = '开发工具';
     }
 };
 

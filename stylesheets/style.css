@@ -292,13 +292,53 @@ body {
         .section section.skills .skill ul li span {
           float: right;
           width: 85%; }
-        .section section.skills .skill ul li:first-child {
-          margin-top: 20px; }
       .section section.skills .skill:hover {
         -webkit-transform: translate(5px, 5px);
         -moz-transform: translate(5px, 5px);
         -o-transform: translate(5px, 5px);
         transform: translate(5px, 5px); }
+    @media screen and (max-width: 440px) {
+      .section section.skills {
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 20px; }
+        .section section.skills .skill {
+          width: 90%;
+          height: auto;
+          overflow: auto;
+          margin: 2em auto;
+          border: none;
+          background: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          -webkit-transition: none;
+          -moz-transition: none;
+          -o-transition: none;
+          transition: none;
+          clear: both; }
+          .section section.skills .skill .skill-title {
+            float: left;
+            width: 3em;
+            height: 3em;
+            text-align: center;
+            border-bottom: 2px solid #a9a9a9;
+            border-radius: 50%;
+            opacity: 0.8;
+            filter: alpha(opacity=80); }
+          .section section.skills .skill ul {
+            float: right;
+            width: 80%; }
+            .section section.skills .skill ul ul li {
+              padding: 0;
+              font-size: 16px;
+              line-height: 24px; }
+          .section section.skills .skill:hover {
+            -webkit-transform: none;
+            -moz-transform: none;
+            -o-transform: none;
+            transform: none; } }
     .section section.contact {
       position: relative;
       font-size: 20px;
@@ -333,10 +373,6 @@ body {
         -moz-transition: transform 0.2s ease-out;
         -o-transition: transform 0.2s ease-out;
         transition: transform 0.2s ease-out; }
-        @media screen and (max-width: 768px) {
-          .section section.contact .introduce {
-            float: left;
-            width: 100%; } }
         .section section.contact .introduce:hover {
           -webkit-transform: translate(5px, 5px);
           -moz-transform: translate(5px, 5px);
@@ -350,7 +386,18 @@ body {
         .section section.contact .address span {
           display: none; }
       .section section.contact .introduce {
-        padding: .5em; } }
+        float: left;
+        width: 100%;
+        padding: .5em;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        transition: none; }
+        .section section.contact .introduce:hover {
+          -webkit-transform: none;
+          -moz-transform: none;
+          -o-transform: none;
+          transform: none; } }
 
 /* 右侧导航 */
 #fp-nav ul li a span {

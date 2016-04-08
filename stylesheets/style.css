@@ -219,7 +219,7 @@ body {
             -o-transform: translate(5px, 5px);
             transform: translate(5px, 5px); }
           .section section.demos .demo .demoblock .preview {
-            width: 80%;
+            width: 50%;
             height: 75%;
             margin: auto;
             margin-top: 4%;
@@ -241,7 +241,7 @@ body {
               color: #000; }
         .section section.demos .demo .demoinfo {
           float: right;
-          width: 200px;
+          width: 50%;
           padding-left: 20px; }
           .section section.demos .demo .demoinfo h3 {
             padding-bottom: 20px; }
@@ -251,6 +251,17 @@ body {
             float: right;
             width: 85%;
             line-height: 20px; }
+      @media screen and (max-width: 768px) {
+        .section section.demos {
+          width: 100%;
+          font-size: 20px; }
+          .section section.demos .demo {
+            width: 100%;
+            height: 80%; }
+            .section section.demos .demo .demoblock {
+              display: none; }
+            .section section.demos .demo .demoinfo {
+              width: 100%; } }
     .section section.skills .skill {
       -webkit-flex-basis: 13em;
       flex-basis: 13em;
@@ -301,13 +312,14 @@ body {
       .section section.skills {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 80%;
         font-size: 20px; }
         .section section.skills .skill {
           width: 90%;
           height: auto;
           overflow: auto;
-          margin: 2em auto;
+          margin: 0 auto;
+          margin-bottom: 1em;
           border: none;
           background: none;
           -webkit-box-shadow: none;
@@ -345,7 +357,7 @@ body {
       font-weight: lighter; }
       .section section.contact .address {
         float: left;
-        width: 40%; }
+        width: 50%; }
         .section section.contact .address li {
           position: relative;
           width: auto;
@@ -360,10 +372,11 @@ body {
             color: #000; }
       .section section.contact .introduce {
         float: right;
-        width: 60%;
+        width: 50%;
         height: auto;
         padding: 30px;
         color: #666;
+        font-size: 16px;
         border: 2px solid #a9a9a9;
         background-color: #fefefe;
         -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -378,26 +391,30 @@ body {
           -moz-transform: translate(5px, 5px);
           -o-transform: translate(5px, 5px);
           transform: translate(5px, 5px); }
-    @media screen and (max-width: 768px) {
-      .section section.contact .address {
-        margin-top: 3em; }
-        .section section.contact .address li {
-          margin: 0; }
-        .section section.contact .address span {
-          display: none; }
-      .section section.contact .introduce {
-        float: left;
-        width: 100%;
-        padding: .5em;
-        -webkit-transition: none;
-        -moz-transition: none;
-        -o-transition: none;
-        transition: none; }
-        .section section.contact .introduce:hover {
-          -webkit-transform: none;
-          -moz-transform: none;
-          -o-transform: none;
-          transform: none; } }
+      @media screen and (max-width: 768px) {
+        .section section.contact {
+          width: 90%;
+          height: 80%; }
+          .section section.contact .address {
+            margin-top: 1em; }
+            .section section.contact .address li {
+              margin: 0; }
+            .section section.contact .address span {
+              display: none; }
+          .section section.contact .introduce {
+            float: left;
+            width: 100%;
+            padding: .5em;
+            font-size: 20px;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none; }
+            .section section.contact .introduce:hover {
+              -webkit-transform: none;
+              -moz-transform: none;
+              -o-transform: none;
+              transform: none; } }
 
 /* 右侧导航 */
 #fp-nav ul li a span {

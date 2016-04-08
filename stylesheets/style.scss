@@ -130,7 +130,7 @@
           }
 
           & .preview {
-            width: 80%;
+            width: 50%;
             height: 75%;
             margin: auto;
             margin-top: 4%;
@@ -161,7 +161,7 @@
         }
         & .demoinfo {
           float: right;
-          width: $demo-width / 2;
+          width: 50%;
           padding-left: $font-size;
 
           & h3 {
@@ -177,7 +177,22 @@
           }
         }
       }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        font-size: $font-size;
 
+        & .demo {
+          width: 100%;
+          height: 80%;
+
+          & .demoblock {
+            display: none;
+          }
+          & .demoinfo {
+            width: 100%;
+          }
+        }
+      }
     }
     /* skills */
     &.skills {
@@ -238,14 +253,15 @@
       @media screen and (max-width: 768px) {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 80%;
         font-size: $font-size;
 
         & .skill {
           width: 90%;
           height: auto;
           overflow: auto;
-          margin: 2em auto;
+          margin: 0 auto;
+          margin-bottom: 1em;
           border: none;
           background: none;
           @include box-shadow(none);
@@ -286,11 +302,11 @@
 
       & .address {
         float: left;
-        width: 40%;
+        width: 50%;
 
         & li {
           position: relative;
-          width: $contact-li-width;
+          width: auto;
           height: $font-size * 2;
           margin-bottom: $font-size * 1.5;
           text-transform: uppercase;
@@ -309,10 +325,11 @@
 
       & .introduce {
         float: right;
-        width: 60%;
+        width: 50%;
         height: auto;
         padding: $font-size * 1.5;
         color: $text-color;
+        font-size: $font-size * .8;
         border: $text-border;
         background-color: #fefefe;
         @include box-shadow(0 1px 2px rgba(0,0,0,.15));
@@ -322,28 +339,29 @@
           @include transform(translate(5px, 5px));
         }
       }
-    }
-    @media screen and (max-width: 768px) {
-      &.contact {
+      @media screen and (max-width: 768px) {
+        width: 90%;
+        height: 80%;
         & .address {
-          margin-top: 3em;
-          & li {
-            margin: 0;
+            margin-top: 1em;
+            & li {
+              margin: 0;
+            }
+            & span {
+              display: none;
+            }
           }
-          & span {
-            display: none;
-          }
-        }
         & .introduce {
-          float: left;
-          width: 100%;
-          padding: .5em;
-          @include transition(none);
+            float: left;
+            width: 100%;
+            padding: .5em;
+            font-size: $font-size;
+            @include transition(none);
 
-          &:hover {
-            @include transform(none);
+            &:hover {
+              @include transform(none);
+            }
           }
-        }
       }
     }
   }

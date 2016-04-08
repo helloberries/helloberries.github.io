@@ -86,12 +86,6 @@ body {
 
 /* MIXINS */
 /* EXTENDS */
-.active-nav-a {
-  color: #a8a8a8;
-  -webkit-box-shadow: inset 150px 0 rgba(255, 255, 255, 0.5);
-  -moz-box-shadow: inset 150px 0 rgba(255, 255, 255, 0.5);
-  box-shadow: inset 150px 0 rgba(255, 255, 255, 0.5); }
-
 .flex-container, .header .nav, .section section.demos, .section section.skills {
   display: -webkit-flex;
   display: flex;
@@ -148,6 +142,40 @@ body {
         -moz-box-shadow: inset 15em 0 rgba(255, 255, 255, 0.5);
         box-shadow: inset 15em 0 rgba(255, 255, 255, 0.5); }
 
+@media screen and (max-width: 768px) {
+  /*------------------------------------*\
+    #HEADER
+  \*------------------------------------*/
+  .header {
+    background-image: -webkit-linear-gradient(left, #97dde1, #f7dbe7);
+    background-image: -moz-linear-gradient(left, #97dde1, #f7dbe7);
+    background-image: -o-linear-gradient(left, #97dde1, #f7dbe7);
+    background-image: linear-gradient(left, #97dde1, #f7dbe7);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; } }
+@media screen and (max-width: 440px) {
+  .header .nav {
+    display: block;
+    width: 100%; }
+    .header .nav li {
+      float: left;
+      width: 25%;
+      border: none;
+      font-size: 1.2em;
+      letter-spacing: 0; }
+      .header .nav li a:link, .header .nav li a:visited {
+        margin: 0 3px;
+        width: 100%;
+        color: #fff;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; }
+      .header .nav li.active a {
+        color: #a8a8a8;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; } }
 /*------------------------------------*\
     #SECTIONS
 \*------------------------------------*/
@@ -276,6 +304,7 @@ body {
         transform: translate(5px, 5px); }
     .section section.contact {
       position: relative;
+      font-size: 20px;
       font-weight: lighter; }
       .section section.contact .address {
         float: left;
@@ -285,7 +314,6 @@ body {
           width: auto;
           height: 40px;
           margin-bottom: 30px;
-          font-size: 20px;
           text-transform: uppercase; }
           .section section.contact .address li a span {
             margin-left: 20px; }
@@ -298,8 +326,6 @@ body {
         width: 60%;
         height: auto;
         padding: 30px;
-        font-size: 20px;
-        font-weight: lighter;
         color: #666;
         border: 2px solid #a9a9a9;
         background-color: #fefefe;
@@ -310,6 +336,10 @@ body {
         -moz-transition: transform 0.2s ease-out;
         -o-transition: transform 0.2s ease-out;
         transition: transform 0.2s ease-out; }
+        @media screen and (max-width: 768px) {
+          .section section.contact .introduce {
+            float: left;
+            width: 100%; } }
         .section section.contact .introduce:hover {
           -webkit-transform: translate(5px, 5px);
           -moz-transform: translate(5px, 5px);

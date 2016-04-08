@@ -85,12 +85,6 @@ body {
 }
 
 
-
-
-
-
-
-
 /* MIXINS */
 @mixin linear-gradient($linear-gradient...) {
     background-image: -webkit-linear-gradient($linear-gradient);
@@ -121,10 +115,6 @@ body {
 }
 
 /* EXTENDS */
-.active-nav-a {
-    color: #a8a8a8;
-    @include box-shadow(inset 150px 0 rgba(255,255,255,.5));
-}
 .flex-container{
     display: -webkit-flex;
     display: flex;

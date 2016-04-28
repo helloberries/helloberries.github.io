@@ -65,7 +65,7 @@
         border: none;
         font-size: 1.2em;
         letter-spacing: 0;
-        
+
         & a:link, & a:visited {
           margin: 0 3px;
           width: 100%;
@@ -92,7 +92,7 @@
     height: auto;
     margin: 0 auto;
     margin-top: $nav-li-height * 1.5;
-    
+
     /* home */
     &.home {
       color: $text-color;
@@ -130,7 +130,7 @@
           }
 
           & .preview {
-            width: 50%;
+            width: 75%;
             height: 75%;
             margin: auto;
             margin-top: 4%;
@@ -196,19 +196,28 @@
     }
     /* skills */
     &.skills {
-        @extend .flex-container;
+      display: block;
+      width: 80%;
+      height: 50%;
+      padding-left: 10%;
+      font-size: $font-size;
 
         & .skill {
-          -webkit-flex-basis: $skill-div-width;
-          flex-basis: $skill-div-width;
-          height: $skill-div-height;
-          margin-bottom: $font-size;
-          color: $text-color;
-          border: $text-border;
-          background-color: #fefefe;
-          @include box-shadow(0 1px 2px rgba(0,0,0,.15));
-          @include transition(transform .2s ease-out);
-          
+          float: left;
+          width: 40%;
+          margin: 0 auto;
+          margin-bottom: 1em;
+
+          & .skill-title {
+            float: left;
+            width: $skill-span-height;
+            height: $skill-span-height;
+            padding-top: $skill-span-height/4;
+            text-align: center;
+            border-bottom: $text-border;
+            border-radius: 50%;
+            @include opacity(.8);
+          }
           &:first-child .skill-title {
             background-color: #97dde1;
           }
@@ -221,33 +230,15 @@
           &:last-child .skill-title {
             background-color: #ffc0cb;
           }
+          & ul {
+            float: right;
+            width: 80%;
 
-          & .skill-title {
-            width: 100%;
-            height: $skill-span-height;
-            line-height: $skill-span-height;
-            text-align: center;
-            border-bottom: $text-border;
-            @include opacity(.8);
-          }
-
-          & ul li {
-            padding: $font-size * .5 $font-size * .5;
-            font-size: $font-size * .8;
-            line-height: $font-size * 1.2;
-            clear: both;
-
-            & i {
-              margin-right: 5px;
+            & ul li {
+              padding: 0;
+              font-size: $font-size * .8;
+              line-height: $font-size * 1.2;
             }
-            & span {
-              float: right;
-              width: 85%;
-            }
-          }
-
-          &:hover {
-            @include transform(translate(5px, 5px));
           }
         }
       @media screen and (max-width: 768px) {
@@ -258,14 +249,10 @@
 
         & .skill {
           width: 90%;
-          height: auto;
-          overflow: auto;
           margin: 0 auto;
           margin-bottom: 1em;
           border: none;
           background: none;
-          @include box-shadow(none);
-          @include transition(none);
           clear: both;
 
           & .skill-title {
@@ -286,10 +273,6 @@
               font-size: $font-size * .8;
               line-height: $font-size * 1.2;
             }
-          }
-
-          &:hover {
-            @include transform(none);
           }
         }
       }

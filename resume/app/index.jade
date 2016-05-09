@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    title my resume
+    link(rel="stylesheet", type="text/css", href="scss/style.css")
+  body
+    header 
+      div.container.header
+        ul
+          each nav in ['home', 'demos', 'skills']
+            li
+              a(href="#"+nav)= nav
+    section
+      div.container.main
+        div.info
+        div.demos
+        div.skills
+    footer

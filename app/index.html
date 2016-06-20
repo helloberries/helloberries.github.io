@@ -1,17 +1,192 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>gulp-resume</title>
-		<link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-	</head>
-	<body>
-		<div class="testing">
-			good
-		</div>
-		<!--build:js js/main.min.js -->
-		<script src="js/lib/jquery.min.js"></script>
-		<script src="js/main.js"></script>
-		<!-- endbuild -->
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <title>gulp-resume</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/flexslider/2.6.1/flexslider.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="container no-padding">
+        <div class="row">
+          <div class="col-md-3 l-content">
+            <div class="profile-pic">
+              <div class="pic-bg"><img src="../images/profile-avatar.png" class="img-responsive"></div>
+            </div>
+            <nav>
+              <ul class="navigation">
+                <li id="menu-item-82" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#profile"><i class="fa fa-user"></i><span>Profile</span></a></li>
+                <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#demos"><i class="fa fa-heart"></i><span>Demos</span></a></li>
+                <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#experience"><i class="fa fa-briefcase"></i><span>Experience</span></a></li>
+                <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page flex-active"><a href="#skill"><i class="fa fa-rocket"></i><span>Skill</span></a></li>
+                <li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#contact"><i class="fa fa-envelope"></i><span>Contact</span></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-9 r-content">
+            <div class="flexslider">
+              <div class="slides">
+                <section id="profile" class="no-display">
+                  <div class="profile">
+                    <h2 class="animated fadeInDown">你好，我是<span>张晴</span></h2>
+                    <h2 class="animated fadeInDown">Web前端开发</h2>
+                    <div class="sep1"></div><br>
+                    <p class="animated fadeInDown">多年以后，奥雷连诺上校站在行刑队面前，准会想起父亲带他去参观冰块的那个遥远的下午。当时，马孔多是个二十户人家的村庄，一座座土房都盖在河岸上，河水清澈，沿着遍布石头的河床流去，河里的石头光滑、洁白，活象史前的巨蛋。这块天地还是新开辟的，许多东西都叫不出名字，不得不用手指指点点。每年三月，衣衫褴楼的吉卜赛人都要在村边搭起帐篷，在笛鼓的喧嚣声中，向马孔多的居民介绍科学家的最新发明。</p>
+                    <div class="personal-info col-md-12 no-padding animated flipInX">
+                      <h4>Personal Info</h4>
+                      <div class="sep2"></div>
+                      <ul>
+                        <li>
+                          <div class="p-info"><em>Name</em><span>张晴</span></div>
+                        </li>
+                        <li>
+                          <div class="p-info"><em>Email</em><span>qzhang214@foxmail.com</span></div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </section>
+                <section id="demos" class="no-display">
+                  <div class="demos"><br>
+                    <div class="page-head animated fadeInDown">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <h3>Demos</h3>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="np-main">
+                            <p>进入上一页/下一页</p>
+                            <div class="np-controls"><a href="#" class="previous"><i class="fa fa-arrow-circle-left"></i></a><a href="#" class="next"><i class="fa fa-arrow-circle-right"></i></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="demos-wrap">
+                      <div class="row">
+                        <ul id="portfolio">
+                          <li class="item col-md-4 animated flipInX"><a href="../images/21.jpg" class="nivo-lbox"></a>
+                            <div class="folio-img"><a href="../images/21.jpg"><img src="../images/21.jpg" width="230" height="184" draggable="false"></a></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section id="experience" class="no-display">
+                  <div class="item experience"><br>
+                    <div class="page-head animated fadeInDown">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <h3>Experience</h3>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="np-main">
+                            <p>进入上一页/下一页</p>
+                            <div class="np-controls"><a href="#" class="previous"><i class="fa fa-arrow-circle-left"></i></a><a href="#" class="next"><i class="fa fa-arrow-circle-right"></i></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="experience-info animated slideInLeft">
+                      <h4>Education</h4>
+                      <div class="sep2"></div>
+                      <ul>
+                        <li>
+                          <h5>天津医科大学</h5><span class="year">2011 ~ 2015<i class="fa fa-calendar"></i></span>
+                          <p><span>法学本科（医事法学方向）</span></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="experience-info animated slideInLeft">
+                      <h4>Work Experience</h4>
+                      <div class="sep2"></div>
+                      <ul>
+                        <li>
+                          <h5>Company Name</h5><span class="year">2016.4 ~ 2016.5<i class="fa fa-calendar"></i></span>
+                          <p>视觉稿还原，PC端网站重构</p>
+                        </li>
+                        <li>
+                          <h5>搜狐视频</h5><span class="year">2014.11 ~ 2015.2</span>
+                          <p>完善视频资料库内容</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+                <section id="skill" class="no-display flex-active-slide">
+                  <div class="item experience">
+                    <div class="page-head animated fadeInDown">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <h3>Skill</h3>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="np-main">
+                            <p>进入上一页/下一页</p>
+                            <div class="np-controls"><a href="#" class="previous"><i class="fa fa-arrow-circle-left"></i></a><a href="#" class="next"><i class="fa fa-arrow-circle-right"></i></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-info">
+                      <h4>Skill</h4>
+                      <div class="sep2"></div>
+                      <ul>
+                        <li>
+                          <p>HTML</p>
+                          <div class="skill-bg"><span style="width: 98%" class="skill1"></span></div>
+                        </li>
+                        <li>
+                          <p>CSS</p>
+                          <div class="skill-bg"><span style="width: 95%" class="skill1"></span></div>
+                        </li>
+                        <li>
+                          <p>SCSS</p>
+                          <div class="skill-bg"><span style="width: 90%" class="skill1"></span></div>
+                        </li>
+                        <li>
+                          <p>JavaScript</p>
+                          <div class="skill-bg"><span style="width: 80%" class="skill1"></span></div>
+                        </li>
+                        <li>
+                          <p>jQuery</p>
+                          <div class="skill-bg"><span style="width: 80%" class="skill1"></span></div>
+                        </li>
+                        <li>
+                          <p>Bootstrap</p>
+                          <div class="skill-bg"><span style="width: 70%" class="skill1"></span></div>
+                        </li>
+                        <li>
+                          <p>Git</p>
+                          <div class="skill-bg"><span style="width: 65%" class="skill1"></span></div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="skill-info">
+                      <h4>Tools</h4>
+                      <div class="sep2"></div>
+                      <ul class="tools">
+                        <li>Gulp</li>
+                        <li>Photoshop</li>
+                        <li>Atom</li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--build:js js/main.min.js -->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.1/jquery.flexslider-min.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>

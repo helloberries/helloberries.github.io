@@ -2,8 +2,10 @@ var gulp = require('gulp');
 // Requires plugins
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
+var jade = require('gulp-jade');
 var useref = require('gulp-useref');
 var gutil = require('gulp-util');
+var autoprefixer = require('gulp-autoprefixer');
 
 
 gulp.task('sass', function() {
@@ -13,6 +15,15 @@ gulp.task('sass', function() {
     .pipe(browserSync.reload({
       stream: true
     }))
+});
+
+gulp.task('autoprefixer', function () {
+	return gulp.src('app/css/**/*.css')
+		.pipe(autoprefixer({
+			browsers: ['last 2 versions'],
+			cascade: false
+		}))
+		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('browserSync', function() {
@@ -30,6 +41,14 @@ gulp.task('js', function() {
       }))
 })
 
+gulp.task('jade', function () {
+  return gulp.src('app/jade/**/*.jade')
+  .pipe(jade({
+      pretty: true
+    }))
+  .pipe(gulp.dest('app/'))
+})
+
 gulp.task('html', function() {
     return gulp.src('app/*.html')
       .pipe(browserSync.reload({
@@ -44,9 +63,10 @@ gulp.task('useref', function(){
 })
 
 
-gulp.task('serve', ['browserSync', 'sass', 'js'], function (){
+gulp.task('serve', ['browserSync', 'autoprefixer', 'sass', 'js', 'jade', 'html'], function (){
   gulp.watch('app/scss/**/*.scss', ['sass']);
   gulp.watch('app/js/*.js', ['js']);
+  gulp.watch('app/jade/**/*.jade', ['jade'])
   gulp.watch('app/*.html', ['html']);
   // Other watchers
 })

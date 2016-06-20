@@ -1,0 +1,183 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		title gulp-resume
+		link(rel="stylesheet", href="css/bootstrap.min.css")
+		link(rel="stylesheet", href="https://cdn.bootcss.com/flexslider/2.6.1/flexslider.min.css")
+		link(rel="stylesheet", href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css")
+		link(rel="stylesheet", href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css")
+		link(rel="stylesheet", href="css/styles.css", media="screen", title="no title", charset="utf-8")
+	body
+		div.main-content
+			div.container.no-padding
+				div.row
+					div.col-md-3.l-content
+						div.profile-pic
+							div.pic-bg
+								img(src="../images/profile-avatar.png").img-responsive
+						nav
+							ul.navigation
+								li#menu-item-82.menu-item.menu-item-type-post_type.menu-item-object-page
+									a(href="#profile")
+										i.fa.fa-user
+										span Profile
+								li#menu-item-21.menu-item.menu-item-type-post_type.menu-item-object-page
+									a(href="#demos")
+										i.fa.fa-heart
+										span Demos
+								li#menu-item-20.menu-item.menu-item-type-post_type.menu-item-object-page
+									a(href="#experience")
+										i.fa.fa-briefcase
+										span Experience
+								li#menu-item-19.menu-item.menu-item-type-post_type.menu-item-object-page.flex-active
+									a(href="#skill")
+										i.fa.fa-rocket
+										span Skill
+								li#menu-item-74.menu-item.menu-item-type-post_type.menu-item-object-page
+									a(href="#contact")
+										i.fa.fa-envelope
+										span Contact
+					div.col-md-9.r-content
+						div.flexslider
+							div.slides
+								section#profile.no-display
+									div.profile
+										h2.animated.fadeInDown 你好，我是
+											span 张晴
+										h2.animated.fadeInDown Web前端开发
+										div.sep1
+										br
+										p.animated.fadeInDown 多年以后，奥雷连诺上校站在行刑队面前，准会想起父亲带他去参观冰块的那个遥远的下午。当时，马孔多是个二十户人家的村庄，一座座土房都盖在河岸上，河水清澈，沿着遍布石头的河床流去，河里的石头光滑、洁白，活象史前的巨蛋。这块天地还是新开辟的，许多东西都叫不出名字，不得不用手指指点点。每年三月，衣衫褴楼的吉卜赛人都要在村边搭起帐篷，在笛鼓的喧嚣声中，向马孔多的居民介绍科学家的最新发明。
+										div.personal-info.col-md-12.no-padding.animated.flipInX
+											h4 Personal Info
+											div.sep2
+											ul
+												li
+													div.p-info
+														em Name
+														span 张晴
+												li
+													div.p-info
+														em Email
+														span qzhang214@foxmail.com
+										div.clearfix
+								section#demos.no-display
+									div.demos
+										br
+										div.page-head.animated.fadeInDown
+											div.row
+												div.col-md-5
+													h3 Demos
+												div.col-md-7
+													div.np-main
+														p 进入上一页/下一页
+														div.np-controls
+															a(href="#").previous
+																i.fa.fa-arrow-circle-left
+															a(href="#").next
+																i.fa.fa-arrow-circle-right
+										div.demos-wrap
+											div.row
+												ul#portfolio
+													li.item.col-md-4.animated.flipInX
+														a(href="../images/21.jpg").nivo-lbox
+														div.folio-img
+															a(href="../images/21.jpg")
+																img(src="../images/21.jpg", width="230", height="184", draggable="false")
+								section#experience.no-display
+									div.item.experience
+										br
+										div.page-head.animated.fadeInDown
+											div.row
+												div.col-md-5
+													h3 Experience
+												div.col-md-7
+													div.np-main
+														p 进入上一页/下一页
+														div.np-controls
+															a(href="#").previous
+																i.fa.fa-arrow-circle-left
+															a(href="#").next
+																i.fa.fa-arrow-circle-right
+										div.experience-info.animated.slideInLeft
+											h4 Education
+											div.sep2
+											ul
+												li
+													h5 天津医科大学
+													span.year 2011 ~ 2015
+														i.fa.fa-calendar
+													p
+														span 法学本科（医事法学方向）
+										div.experience-info.animated.slideInLeft
+											h4 Work Experience
+											div.sep2
+											ul
+												li
+													h5 Company Name
+													span.year 2016.4 ~ 2016.5
+														i.fa.fa-calendar
+													p 视觉稿还原，PC端网站重构
+												li
+													h5 搜狐视频
+													span.year 2014.11 ~ 2015.2
+													p 完善视频资料库内容
+								section#skill.no-display.flex-active-slide
+									div.item.experience
+										div.page-head.animated.fadeInDown
+											div.row
+												div.col-md-5
+													h3 Skill
+												div.col-md-7
+													div.np-main
+														p 进入上一页/下一页
+														div.np-controls
+															a(href="#").previous
+																i.fa.fa-arrow-circle-left
+															a(href="#").next
+																i.fa.fa-arrow-circle-right
+										div.skill-info
+											h4 Skill
+											div.sep2
+											ul
+												li
+													p HTML
+													div.skill-bg
+														span.skill1(style="width: 98%")
+												li
+													p CSS
+													div.skill-bg
+														span.skill1(style="width: 95%")
+												li
+													p SCSS
+													div.skill-bg
+														span.skill1(style="width: 90%")
+												li
+													p JavaScript
+													div.skill-bg
+														span.skill1(style="width: 80%")
+												li
+													p jQuery
+													div.skill-bg
+														span.skill1(style="width: 80%")
+												li
+													p Bootstrap
+													div.skill-bg
+														span.skill1(style="width: 70%")
+												li
+													p Git
+													div.skill-bg
+														span.skill1(style="width: 65%")
+										div.skill-info
+											h4 Tools
+											div.sep2
+											ul.tools
+												li Gulp
+												li Photoshop
+												li Atom
+		<!--build:js js/main.min.js -->
+		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="https://cdn.bootcss.com/flexslider/2.6.1/jquery.flexslider-min.js"></script>
+		<!-- endbuild -->

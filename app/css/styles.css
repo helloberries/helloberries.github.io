@@ -253,7 +253,10 @@ p {
 /* Skill */
 .skill-info {
   padding-bottom: 20px;
-  border-bottom: 1px solid #ededed; }
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 30px;
+  display: table;
+  width: 100%; }
   .skill-info ul {
     padding: 0; }
     .skill-info ul li {
@@ -291,3 +294,42 @@ p {
   font-weight: 400;
   background: #33ffcc;
   border-left: 1px solid #ededed; }
+
+/* Contact */
+.contact {
+  padding: 30px 30px 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  background: #fff; }
+  .contact h4 {
+    color: #2c383c;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 30px; }
+
+.contact-info {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 30px;
+  display: table;
+  width: 100%; }
+  .contact-info ul {
+    padding: 0; }
+    .contact-info ul li {
+      font-size: 16px;
+      color: #828282;
+      list-style: none;
+      margin-bottom: 18px; }
+      .contact-info ul li i {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        margin-right: 5px;
+        color: #4c4d4f;
+        font-size: 16px; }
+      .contact-info ul li a:link, .contact-info ul li a:visited {
+        color: #828282;
+        transition: all .3s ease-out; }
+        .contact-info ul li a:link:hover, .contact-info ul li a:visited:hover {
+          color: #2c383c; }

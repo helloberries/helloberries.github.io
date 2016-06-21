@@ -178,6 +178,8 @@ p {
     .profile h2 span {
       font-weight: 700;
       color: #000; }
+  .profile p {
+    text-indent: 2em; }
   .profile .personal-info {
     border-top: 1px solid #ececec; }
     .profile .personal-info h4 {
@@ -216,6 +218,20 @@ p {
   margin-bottom: 0;
   overflow: hidden;
   background: #fff; }
+
+.demos-wrap {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 30px;
+  display: table;
+  width: 100%; }
+  .demos-wrap #portfolio li {
+    margin: 20px 0; }
+    .demos-wrap #portfolio li a:link, .demos-wrap #portfolio li a:visited {
+      color: #009999; }
+    .demos-wrap #portfolio li a:hover, .demos-wrap #portfolio li a:active {
+      color: #00cc99; }
 
 .experience {
   padding: 30px 30px 0;

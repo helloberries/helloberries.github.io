@@ -178,6 +178,8 @@ p {
     .profile h2 span {
       font-weight: 700;
       color: #000; }
+  .profile p {
+    text-indent: 2em; }
   .profile .personal-info {
     border-top: 1px solid #ececec; }
     .profile .personal-info h4 {
@@ -217,6 +219,20 @@ p {
   overflow: hidden;
   background: #fff; }
 
+.demos-wrap {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 30px;
+  display: table;
+  width: 100%; }
+  .demos-wrap #portfolio li {
+    margin: 20px 0; }
+    .demos-wrap #portfolio li a:link, .demos-wrap #portfolio li a:visited {
+      color: #009999; }
+    .demos-wrap #portfolio li a:hover, .demos-wrap #portfolio li a:active {
+      color: #00cc99; }
+
 .experience {
   padding: 30px 30px 0;
   margin-bottom: 0;
@@ -253,7 +269,10 @@ p {
 /* Skill */
 .skill-info {
   padding-bottom: 20px;
-  border-bottom: 1px solid #ededed; }
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 30px;
+  display: table;
+  width: 100%; }
   .skill-info ul {
     padding: 0; }
     .skill-info ul li {
@@ -298,3 +317,35 @@ p {
   margin-bottom: 0;
   overflow: hidden;
   background: #fff; }
+  .contact h4 {
+    color: #2c383c;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 30px; }
+
+.contact-info {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 30px;
+  display: table;
+  width: 100%; }
+  .contact-info ul {
+    padding: 0; }
+    .contact-info ul li {
+      font-size: 16px;
+      color: #828282;
+      list-style: none;
+      margin-bottom: 18px; }
+      .contact-info ul li i {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        margin-right: 5px;
+        color: #4c4d4f;
+        font-size: 16px; }
+      .contact-info ul li a:link, .contact-info ul li a:visited {
+        color: #828282;
+        transition: all .3s ease-out; }
+        .contact-info ul li a:link:hover, .contact-info ul li a:visited:hover {
+          color: #2c383c; }

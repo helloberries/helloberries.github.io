@@ -4,8 +4,8 @@ html
 		meta(charset="utf-8")
 		title gulp-resume
 		link(rel="stylesheet", href="css/bootstrap.min.css")
-		link(rel="stylesheet", href="https://cdn.bootcss.com/flexslider/2.6.1/flexslider.min.css")
-		link(rel="stylesheet", href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css")
+		link(rel="stylesheet", href="css/flexslider.css")
+		link(rel="stylesheet", href="css/animate.min.css")
 		link(rel="stylesheet", href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css")
 		link(rel="stylesheet", href="css/styles.css", media="screen", title="no title", charset="utf-8")
 	body
@@ -18,37 +18,44 @@ html
 								img(src="../images/profile-avatar.png").img-responsive
 						nav
 							ul.navigation
-								li#menu-item-82.menu-item.menu-item-type-post_type.menu-item-object-page
+								li#profiletab.menu-item.menu-item-type-post_type.menu-item-object-page.flex-active
 									a(href="#profile")
 										i.fa.fa-user
 										span Profile
-								li#menu-item-21.menu-item.menu-item-type-post_type.menu-item-object-page
+								li#demostab.menu-item.menu-item-type-post_type.menu-item-object-page
 									a(href="#demos")
 										i.fa.fa-heart
 										span Demos
-								li#menu-item-20.menu-item.menu-item-type-post_type.menu-item-object-page
+								li#experiencetab.menu-item.menu-item-type-post_type.menu-item-object-page
 									a(href="#experience")
 										i.fa.fa-briefcase
 										span Experience
-								li#menu-item-19.menu-item.menu-item-type-post_type.menu-item-object-page.flex-active
+								li#skilltab.menu-item.menu-item-type-post_type.menu-item-object-page
 									a(href="#skill")
 										i.fa.fa-rocket
 										span Skill
-								li#menu-item-74.menu-item.menu-item-type-post_type.menu-item-object-page
+								li#contacttab.menu-item.menu-item-type-post_type.menu-item-object-page
 									a(href="#contact")
 										i.fa.fa-envelope
 										span Contact
 					div.col-md-9.r-content
 						div.flexslider
 							div.slides
-								section#profile.no-display
+								section#profile.no-display.flex-active-slide
 									div.profile
 										h2.animated.fadeInDown 你好，我是
 											span 张晴
 										h2.animated.fadeInDown Web前端开发
 										div.sep1
 										br
-										p.animated.fadeInDown 多年以后，奥雷连诺上校站在行刑队面前，准会想起父亲带他去参观冰块的那个遥远的下午。当时，马孔多是个二十户人家的村庄，一座座土房都盖在河岸上，河水清澈，沿着遍布石头的河床流去，河里的石头光滑、洁白，活象史前的巨蛋。这块天地还是新开辟的，许多东西都叫不出名字，不得不用手指指点点。每年三月，衣衫褴楼的吉卜赛人都要在村边搭起帐篷，在笛鼓的喧嚣声中，向马孔多的居民介绍科学家的最新发明。
+										p.animated.fadeInDown 15年毕业后开始学习前端开发，
+										p.animated.fadeInDown 通过网络资料和技术书籍完全自学，
+										p.animated.fadeInDown 目前能够编写语义化的HTML，
+										p.animated.fadeInDown 用CSS预处理器编写结构清晰的样式，
+										p.animated.fadeInDown 熟悉原生JavaScript以及jQuery，
+										p.animated.fadeInDown 能使用Gulp令工作流高效便捷，
+										p.animated.fadeInDown 能使用Git进行代码版本控制，
+										p.animated.fadeInDown 能利用搜索引擎/英文技术社区尽力解决bug。
 										div.personal-info.col-md-12.no-padding.animated.flipInX
 											h4 Personal Info
 											div.sep2
@@ -61,6 +68,14 @@ html
 													div.p-info
 														em Email
 														span qzhang214@foxmail.com
+												li
+													div.p-info
+														em Github
+														span github.com/helloberries
+												li
+													div.p-info
+														em WeChat
+														span @dolphin2567
 										div.clearfix
 								section#demos.no-display
 									div.demos
@@ -80,11 +95,48 @@ html
 										div.demos-wrap
 											div.row
 												ul#portfolio
-													li.item.col-md-4.animated.flipInX
-														a(href="../images/21.jpg").nivo-lbox
-														div.folio-img
-															a(href="../images/21.jpg")
-																img(src="../images/21.jpg", width="230", height="184", draggable="false")
+													li.item.col-md-12.animated.flipInX
+														div.row
+															img.col-md-5(src="images/resumepage.png")
+															div.demo.col-md-7
+																h4 个人在线简历
+																p
+																	span  Bootstrap完成响应式设计
+																p
+																	span  使用Gulp编译合并压缩文件
+																p
+																	i.fa.fa-link
+																	a(href="/",target="_blank")  在线预览
+													li.item.col-md-12.animated.flipInX
+														div.row
+															img.col-md-5(src="images/shop-detail.png")
+															div.demo.col-md-7
+																h4 商品产品页
+																p
+																	span  有选择颜色尺寸、计算总价及查看大图等交互效果
+																p
+																	span  将浮出层功能封装为jQuery插件
+																p
+																	i.fa.fa-link
+																	a(href="https://helloberries.github.io/demos/shop/detail.html",target="_blank")  在线预览
+													li.item.col-md-12.animated.flipInX
+														div.row
+															img.col-md-5(src="images/shop-index.png")
+															div.demo.col-md-7
+																h4 商店主页
+																p
+																	span  用原生JavaScript实现轮播图
+																p
+																	i.fa.fa-link
+																	a(href="https://helloberries.github.io/demos/shop/index.html",target="_blank")  在线预览
+													li.item.col-md-12.animated.flipInX
+														div.row
+															img.col-md-5(src="images/ife.png")
+															div.demo.col-md-7
+																h4 百度前端学院作业
+																p
+																	i.fa.fa-link
+																	a(href="https://helloberries.github.io/ife2016/demopage/index.html",target="_blank")  在线预览
 								section#experience.no-display
 									div.item.experience
 										br
@@ -106,8 +158,9 @@ html
 											ul
 												li
 													h5 天津医科大学
-													span.year 2011 ~ 2015
+													span.year
 														i.fa.fa-calendar
+														span 2011 ~ 2015
 													p
 														span 法学本科（医事法学方向）
 										div.experience-info.animated.slideInLeft
@@ -115,15 +168,18 @@ html
 											div.sep2
 											ul
 												li
-													h5 Company Name
-													span.year 2016.4 ~ 2016.5
+													h5 天津普斯泰科技
+													span.year
 														i.fa.fa-calendar
+														span 2016.4 ~ 2016.5
 													p 视觉稿还原，PC端网站重构
 												li
 													h5 搜狐视频
-													span.year 2014.11 ~ 2015.2
+													span.year
+														i.fa.fa-calendar
+														span 2014.11 ~ 2015.2
 													p 完善视频资料库内容
-								section#skill.no-display.flex-active-slide
+								section#skill.no-display
 									div.item.experience
 										div.page-head.animated.fadeInDown
 											div.row
@@ -137,7 +193,7 @@ html
 																i.fa.fa-arrow-circle-left
 															a(href="#").next
 																i.fa.fa-arrow-circle-right
-										div.skill-info
+										div.skill-info.no-padding.animated.fadeInDown
 											h4 Skill
 											div.sep2
 											ul
@@ -148,28 +204,28 @@ html
 												li
 													p CSS
 													div.skill-bg
-														span.skill1(style="width: 95%")
+														span.skill2(style="width: 95%")
 												li
 													p SCSS
 													div.skill-bg
-														span.skill1(style="width: 90%")
+														span.skill3(style="width: 90%")
 												li
 													p JavaScript
 													div.skill-bg
-														span.skill1(style="width: 80%")
+														span.skill4(style="width: 80%")
 												li
 													p jQuery
 													div.skill-bg
-														span.skill1(style="width: 80%")
+														span.skill5(style="width: 80%")
 												li
 													p Bootstrap
 													div.skill-bg
-														span.skill1(style="width: 70%")
+														span.skill6(style="width: 70%")
 												li
 													p Git
 													div.skill-bg
-														span.skill1(style="width: 65%")
-										div.skill-info
+														span.skill7(style="width: 65%")
+										div.skill-info.no-padding.animated.flipInX
 											h4 Tools
 											div.sep2
 											ul.tools
@@ -178,9 +234,11 @@ html
 												li Atom
 												li Jade
 												li Illustrator
+												li Markdown
 												li Sublime Text 3
 												li Webpack
-								section#contact.no-height
+												li RegExp
+								section#contact.no-display
 									div.item.contact
 										div.page-head.animated.fadeInDown
 											div.row
@@ -194,7 +252,7 @@ html
 																i.fa.fa-arrow-circle-left
 															a(href="#").next
 																i.fa.fa-arrow-circle-right
-										div.contact-info
+										div.contact-info.animated.slideInLeft
 											h4 Contact Info
 											div.sep2
 											ul
@@ -212,8 +270,9 @@ html
 												li
 													i.fa.fa-wechat
 													span dolphin2567
+											img(src="images/qrcode.jpg",width="200",height="200")
 		<!--build:js js/main.min.js -->
 		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/lib/jquery.flexslider.js"></script>
 		<script src="js/main.js"></script>
-		<script src="https://cdn.bootcss.com/flexslider/2.6.1/jquery.flexslider-min.js"></script>
 		<!-- endbuild -->

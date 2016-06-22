@@ -5,7 +5,13 @@ var browserSync = require('browser-sync');
 var jade = require('gulp-jade');
 var useref = require('gulp-useref');
 var gutil = require('gulp-util');
+var gulpIf = require('gulp-if');
+var uglify = require('gulp-uglify');
+var minifyCSS = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
+var gulp_concat = require('gulp-concat');
+var imagemin = require('gulp-imagemin');
+var cache = require('gulp-cache');
 
 
 gulp.task('sass', function() {
@@ -24,6 +30,13 @@ gulp.task('autoprefixer', function () {
 			cascade: false
 		}))
 		.pipe(gulp.dest('dist'));
+});
+
+gulp.task('css', function () {
+  return gulp.src('app/css/**/*.css')
+    .pipe(gulp_concat('index.min.css'))
+    .pipe(minifyCSS())
+    .pipe(gulp.dest('dist/css'))
 });
 
 gulp.task('browserSync', function() {
@@ -58,12 +71,22 @@ gulp.task('html', function() {
 
 gulp.task('useref', function(){
   return gulp.src('app/*.html')
+    // Uglifies only if it's a Javascript file
+    .pipe(gulpIf('*.js', uglify()))
     .pipe(useref())
     .pipe(gulp.dest('dist'))
 })
 
+gulp.task('images', function(){
+  return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
+  // Caching images that ran through imagemin
+  .pipe(cache(imagemin({
+      interlaced: true
+    })))
+  .pipe(gulp.dest('dist/images'))
+});
 
-gulp.task('serve', ['browserSync', 'autoprefixer', 'sass', 'js', 'jade', 'html'], function (){
+gulp.task('serve', ['browserSync', 'images', 'useref', 'css', 'autoprefixer', 'sass', 'js', 'jade', 'html'], function (){
   gulp.watch('app/scss/**/*.scss', ['sass']);
   gulp.watch('app/js/*.js', ['js']);
   gulp.watch('app/jade/**/*.jade', ['jade'])

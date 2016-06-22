@@ -1,11 +1,266 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>gulp-resume</title>
-		<link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-	</head>
-	<body>
-		<script src="js/main.min.js"></script>
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <title>gulp-resume</title>
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="container no-padding">
+        <div class="row">
+          <div class="col-md-3 l-content">
+            <div class="profile-pic">
+              <div class="pic-bg"><img src="images/profile-avatar.png" class="img-responsive"></div>
+            </div>
+            <nav>
+              <ul class="navigation">
+                <li id="profiletab" class="menu-item menu-item-type-post_type menu-item-object-page flex-active"><a href="#profile"><i class="fa fa-user"></i><span>Profile</span></a></li>
+                <li id="demostab" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#demos"><i class="fa fa-heart"></i><span>Demos</span></a></li>
+                <li id="experiencetab" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#experience"><i class="fa fa-briefcase"></i><span>Experience</span></a></li>
+                <li id="skilltab" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#skill"><i class="fa fa-rocket"></i><span>Skill</span></a></li>
+                <li id="contacttab" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#contact"><i class="fa fa-envelope"></i><span>Contact</span></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-9 r-content">
+            <div class="flexslider">
+              <div class="slides">
+                <section id="profile" class="no-display flex-active-slide">
+                  <div class="profile">
+                    <h2 class="animated fadeInDown">你好，我是<span>张晴</span></h2>
+                    <h2 class="animated fadeInDown">Web前端开发</h2>
+                    <div class="sep1"></div><br>
+                    <p class="animated fadeInDown">15年毕业后开始学习前端开发，</p>
+                    <p class="animated fadeInDown">通过网络资料和技术书籍完全自学，</p>
+                    <p class="animated fadeInDown">目前能够编写语义化的HTML，</p>
+                    <p class="animated fadeInDown">用CSS预处理器编写结构清晰的样式，</p>
+                    <p class="animated fadeInDown">熟悉原生JavaScript以及jQuery，</p>
+                    <p class="animated fadeInDown">能使用Gulp令工作流高效便捷，</p>
+                    <p class="animated fadeInDown">能使用Git进行代码版本控制，</p>
+                    <p class="animated fadeInDown">能利用搜索引擎/英文技术社区尽力解决bug。</p>
+                    <div class="personal-info col-md-12 no-padding animated flipInX">
+                      <h4>Personal Info</h4>
+                      <div class="sep2"></div>
+                      <ul>
+                        <li>
+                          <div class="p-info"><em>Name</em><span>张晴</span></div>
+                        </li>
+                        <li>
+                          <div class="p-info"><em>Email</em><span>qzhang214@foxmail.com</span></div>
+                        </li>
+                        <li>
+                          <div class="p-info"><em>Github</em><span>github.com/helloberries</span></div>
+                        </li>
+                        <li>
+                          <div class="p-info"><em>WeChat</em><span>@dolphin2567</span></div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </section>
+                <section id="demos" class="no-display">
+                  <div class="demos"><br>
+                    <div class="page-head animated fadeInDown">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <h3>Demos</h3>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="np-main">
+                            <p>进入上一页/下一页</p>
+                            <div class="np-controls"><a href="#" class="previous"><i class="fa fa-arrow-circle-left"></i></a><a href="#" class="next"><i class="fa fa-arrow-circle-right"></i></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="demos-wrap">
+                      <div class="row">
+                        <ul id="portfolio">
+                          <li class="item col-md-12 animated flipInX">
+                            <div class="row"><img src="images/resumepage.png" class="col-md-5">
+                              <div class="demo col-md-7">
+                                <h4>个人在线简历</h4>
+                                <p><span> Bootstrap完成响应式设计</span></p>
+                                <p><span> 使用Gulp编译合并压缩文件</span></p>
+                                <p><i class="fa fa-link"></i><a href="/" target="_blank"> 在线预览</a></p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="item col-md-12 animated flipInX">
+                            <div class="row"><img src="images/shop-detail.png" class="col-md-5">
+                              <div class="demo col-md-7">
+                                <h4>商品产品页</h4>
+                                <p><span> 有选择颜色尺寸、计算总价及查看大图等交互效果</span></p>
+                                <p><span> 将浮出层功能封装为jQuery插件</span></p>
+                                <p><i class="fa fa-link"></i><a href="https://helloberries.github.io/demos/shop/detail.html" target="_blank"> 在线预览</a></p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="item col-md-12 animated flipInX">
+                            <div class="row"><img src="images/shop-index.png" class="col-md-5">
+                              <div class="demo col-md-7">
+                                <h4>商店主页</h4>
+                                <p><span> 用原生JavaScript实现轮播图</span></p>
+                                <p><i class="fa fa-link"></i><a href="https://helloberries.github.io/demos/shop/index.html" target="_blank"> 在线预览</a></p>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="item col-md-12 animated flipInX">
+                            <div class="row"><img src="images/ife.png" class="col-md-5">
+                              <div class="demo col-md-7">
+                                <h4>百度前端学院作业</h4>
+                                <p><i class="fa fa-link"></i><a href="https://helloberries.github.io/ife2016/demopage/index.html" target="_blank"> 在线预览</a></p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section id="experience" class="no-display">
+                  <div class="item experience"><br>
+                    <div class="page-head animated fadeInDown">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <h3>Experience</h3>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="np-main">
+                            <p>进入上一页/下一页</p>
+                            <div class="np-controls"><a href="#" class="previous"><i class="fa fa-arrow-circle-left"></i></a><a href="#" class="next"><i class="fa fa-arrow-circle-right"></i></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="experience-info animated slideInLeft">
+                      <h4>Education</h4>
+                      <div class="sep2"></div>
+                      <ul>
+                        <li>
+                          <h5>天津医科大学</h5><span class="year"><i class="fa fa-calendar"></i><span>2011 ~ 2015</span></span>
+                          <p><span>法学本科（医事法学方向）</span></p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="experience-info animated slideInLeft">
+                      <h4>Work Experience</h4>
+                      <div class="sep2"></div>
+                      <ul>
+                        <li>
+                          <h5>天津普斯泰科技</h5><span class="year"><i class="fa fa-calendar"></i><span>2016.4 ~ 2016.5</span></span>
+                          <p>视觉稿还原，PC端网站重构</p>
+                        </li>
+                        <li>
+                          <h5>搜狐视频</h5><span class="year"><i class="fa fa-calendar"></i><span>2014.11 ~ 2015.2</span></span>
+                          <p>完善视频资料库内容</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+                <section id="skill" class="no-display">
+                  <div class="item experience">
+                    <div class="page-head animated fadeInDown">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <h3>Skill</h3>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="np-main">
+                            <p>进入上一页/下一页</p>
+                            <div class="np-controls"><a href="#" class="previous"><i class="fa fa-arrow-circle-left"></i></a><a href="#" class="next"><i class="fa fa-arrow-circle-right"></i></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-info no-padding animated fadeInDown">
+                      <h4>Skill</h4>
+                      <div class="sep2"></div>
+                      <ul>
+                        <li>
+                          <p>HTML</p>
+                          <div class="skill-bg"><span style="width: 98%" class="skill1"></span></div>
+                        </li>
+                        <li>
+                          <p>CSS</p>
+                          <div class="skill-bg"><span style="width: 95%" class="skill2"></span></div>
+                        </li>
+                        <li>
+                          <p>SCSS</p>
+                          <div class="skill-bg"><span style="width: 90%" class="skill3"></span></div>
+                        </li>
+                        <li>
+                          <p>JavaScript</p>
+                          <div class="skill-bg"><span style="width: 80%" class="skill4"></span></div>
+                        </li>
+                        <li>
+                          <p>jQuery</p>
+                          <div class="skill-bg"><span style="width: 80%" class="skill5"></span></div>
+                        </li>
+                        <li>
+                          <p>Bootstrap</p>
+                          <div class="skill-bg"><span style="width: 70%" class="skill6"></span></div>
+                        </li>
+                        <li>
+                          <p>Git</p>
+                          <div class="skill-bg"><span style="width: 65%" class="skill7"></span></div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="skill-info no-padding animated flipInX">
+                      <h4>Tools</h4>
+                      <div class="sep2"></div>
+                      <ul class="tools">
+                        <li>Gulp</li>
+                        <li>Photoshop</li>
+                        <li>Atom</li>
+                        <li>Jade</li>
+                        <li>Illustrator</li>
+                        <li>Markdown</li>
+                        <li>Sublime Text 3</li>
+                        <li>Webpack</li>
+                        <li>RegExp</li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+                <section id="contact" class="no-display">
+                  <div class="item contact">
+                    <div class="page-head animated fadeInDown">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <h3>Contact</h3>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="np-main">
+                            <p>进入上一页/下一页</p>
+                            <div class="np-controls"><a href="#" class="previous"><i class="fa fa-arrow-circle-left"></i></a><a href="#" class="next"><i class="fa fa-arrow-circle-right"></i></a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contact-info animated slideInLeft">
+                      <h4>Contact Info</h4>
+                      <div class="sep2"></div>
+                      <ul>
+                        <li><i class="fa fa-map-marker"></i><span>天津</span></li>
+                        <li><i class="fa fa-envelope"></i><span><a href="mailto://qzhang214@foxmail.com">qzhang214@foxmail.com</a></span></li>
+                        <li><i class="fa fa-github"></i><span><a href="https://github.com/helloberries">github.com/helloberries</a></span></li>
+                        <li><i class="fa fa-wechat"></i><span>dolphin2567</span></li>
+                      </ul><img src="images/qrcode.png" width="200" height="200">
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="js/main.min.js"></script>
+  </body>
 </html>

@@ -1,8 +1,10 @@
 /* ====== Main Content ====== */
 @media only screen and (max-width: 767px) {
+  .main-content {
+    margin: 0 0 100px; }
   .container {
     max-width: 280px;
-    width: 280px;
+    width: 100%;
     margin: 0 auto; }
   .l-content {
     background: #000;

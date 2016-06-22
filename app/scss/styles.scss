@@ -15,6 +15,8 @@ p {
 // variables
 $theme: #33ffcc;
 $maincolor: #2c383c;
+$linkcolor: #009999;
+$hovercolor: #00cc99;
 
 
 /* ====== Main Content ====== */
@@ -162,6 +164,13 @@ $maincolor: #2c383c;
 
 		& p {
 			float: left;
+
+			& a:link, & a:visited {
+				color: $linkcolor;
+			}
+			& a:hover {
+				color: $hovercolor;
+			}
 		}
 		& .np-controls {
 			float: right;
@@ -291,10 +300,10 @@ $maincolor: #2c383c;
 			margin: 20px 0;
 
 			& a:link, & a:visited {
-				color: #009999;
+				color: $linkcolor;
 			}
 			& a:hover, & a:active {
-				color: #00cc99;
+				color: $hovercolor;
 			}
 		}
 	}
@@ -343,11 +352,11 @@ $maincolor: #2c383c;
 
 /* Skill */
 .skill-info {
-	padding-bottom: 20px;
 	border-bottom: 1px solid #ededed;
 	margin-bottom: 30px;
 	display: table;
 	width: 100%;
+	padding-bottom: 20px;
 
 	& ul {
 		padding: 0;

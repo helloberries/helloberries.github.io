@@ -2,14 +2,17 @@ doctype
 html
 	head
 		meta(charset="utf-8")
-		title gulp-resume
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+		title 简历
+		link(rel="stylesheet", href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css")
+
+		<!-- build:css css/index.min.css -->
 		link(rel="stylesheet", href="css/bootstrap.min.css")
 		link(rel="stylesheet", href="css/flexslider.css")
 		link(rel="stylesheet", href="css/animate.min.css")
-		link(rel="stylesheet", href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css")
 		link(rel="stylesheet", href="css/styles.css")
-		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
 		link(rel="stylesheet", href="css/mobile.css")
+		<!-- endbuild -->
 	body
 		div.main-content
 			div.container.no-padding
@@ -17,7 +20,7 @@ html
 					div.col-md-3.l-content
 						div.profile-pic
 							div.pic-bg
-								img(src="../images/profile-avatar.png").img-responsive
+								img(src="images/profile-avatar.png").img-responsive
 						nav
 							ul.navigation
 								li#profiletab.menu-item.menu-item-type-post_type.menu-item-object-page.flex-active
@@ -88,7 +91,10 @@ html
 													h3 Demos
 												div.col-md-7
 													div.np-main
-														p 进入上一页/下一页
+														p 进入
+															a(href="#").previous 上一页
+															span /
+															a(href="#").next 下一页
 														div.np-controls
 															a(href="#").previous
 																i.fa.fa-arrow-circle-left
@@ -148,7 +154,10 @@ html
 													h3 Experience
 												div.col-md-7
 													div.np-main
-														p 进入上一页/下一页
+														p 进入
+															a(href="#").previous 上一页
+															span /
+															a(href="#").next 下一页
 														div.np-controls
 															a(href="#").previous
 																i.fa.fa-arrow-circle-left
@@ -189,13 +198,16 @@ html
 													h3 Skill
 												div.col-md-7
 													div.np-main
-														p 进入上一页/下一页
+														p 进入
+															a(href="#").previous 上一页
+															span /
+															a(href="#").next 下一页
 														div.np-controls
 															a(href="#").previous
 																i.fa.fa-arrow-circle-left
 															a(href="#").next
 																i.fa.fa-arrow-circle-right
-										div.skill-info.no-padding.animated.fadeInDown
+										div.skill-info.animated.fadeInDown
 											h4 Skill
 											div.sep2
 											ul
@@ -227,7 +239,7 @@ html
 													p Git
 													div.skill-bg
 														span.skill7(style="width: 65%")
-										div.skill-info.no-padding.animated.flipInX
+										div.skill-info.animated.flipInX
 											h4 Tools
 											div.sep2
 											ul.tools
@@ -248,7 +260,10 @@ html
 													h3 Contact
 												div.col-md-7
 													div.np-main
-														p 进入上一页/下一页
+														p 进入
+															a(href="#").previous 上一页
+															span /
+															a(href="#").next 下一页
 														div.np-controls
 															a(href="#").previous
 																i.fa.fa-arrow-circle-left
@@ -272,7 +287,7 @@ html
 												li
 													i.fa.fa-wechat
 													span dolphin2567
-											img(src="images/qrcode.png",width="200",height="200")
+											img(src="images/qrcode.jpg",width="200",height="200")
 		<!--build:js js/main.min.js -->
 		<script src="js/lib/jquery.min.js"></script>
 		<script src="js/lib/jquery.flexslider.js"></script>

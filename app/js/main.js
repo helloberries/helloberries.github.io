@@ -3,11 +3,11 @@
 jQuery('.flexslider').flexslider({
 	animation: "fade",
 	start: function(slider) {
-		jQuery('.np-controls a.next').click(function(event){
+		jQuery('a.next').click(function(event){
 			event.preventDefault();
 			slider.flexAnimate(slider.getTarget("next"));
 		});
-		jQuery('.np-controls a.previous').click(function(event){
+		jQuery('a.previous').click(function(event){
 			event.preventDefault();
 			slider.flexAnimate(slider.getTarget("previous"));
 		});

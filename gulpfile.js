@@ -29,14 +29,7 @@ gulp.task('autoprefixer', function () {
 			browsers: ['last 2 versions'],
 			cascade: false
 		}))
-		.pipe(gulp.dest('dist'));
-});
-
-gulp.task('css', function () {
-  return gulp.src('app/css/**/*.css')
-    .pipe(gulp_concat('index.min.css'))
-    .pipe(minifyCSS())
-    .pipe(gulp.dest('dist/css'))
+		.pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('browserSync', function() {
@@ -71,6 +64,8 @@ gulp.task('html', function() {
 
 gulp.task('useref', function(){
   return gulp.src('app/*.html')
+    // Minifies only if it's a CSS file
+    .pipe(gulpIf('*.css', minifyCSS()))
     // Uglifies only if it's a Javascript file
     .pipe(gulpIf('*.js', uglify()))
     .pipe(useref())
@@ -86,7 +81,7 @@ gulp.task('images', function(){
   .pipe(gulp.dest('dist/images'))
 });
 
-gulp.task('serve', ['browserSync', 'images', 'useref', 'css', 'autoprefixer', 'sass', 'js', 'jade', 'html'], function (){
+gulp.task('serve', ['browserSync', 'images', 'useref', 'autoprefixer', 'sass', 'js', 'jade', 'html'], function (){
   gulp.watch('app/scss/**/*.scss', ['sass']);
   gulp.watch('app/js/*.js', ['js']);
   gulp.watch('app/jade/**/*.jade', ['jade'])

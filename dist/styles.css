@@ -1,16 +1,3 @@
-/* ====== Main Content ====== */
-@media only screen and (max-width: 767px) {
-  .container {
-    max-width: 280px;
-    width: 280px;
-    margin: 0 auto; }
-  .l-content {
-    background: #000;
-    height: auto;
-    width: 100%;
-    padding: 0;
-    display: table; } }
-
 body {
   background: #d9dbdd;
   font-family: "Open Sans", "Microsoft Yahei", Helvetica, Arial, sans-serif; }
